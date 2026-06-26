@@ -446,14 +446,14 @@ gap: 16px 16px;
 #ca1.owl-carousel .owl-item .drImage1 img{
   width: auto;
   height: 100%;
-  aspect-ratio: .486/1;
+  aspect-ratio: 0.613/1; 
 }
 
 #ca1.owl-carousel .bannerCard .fifthH{
   font-weight: 400;
 }
 #ca1.owl-carousel .owl-item .bannerCard * {
-  opacity: 0;
+  opacity: 0; 
 }
 #ca1.owl-carousel .owl-item.active .bannerCard * {
   opacity: 1;
