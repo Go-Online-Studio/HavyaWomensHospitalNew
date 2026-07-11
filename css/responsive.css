@@ -39,22 +39,23 @@
 
 @media (max-width: 1024.98px) {
   #ca1.owl-carousel .item1 {
-  background: linear-gradient(to right,#fddde9c4 10%, #00000000 64%) 0 0 / cover, url("../image/BannerMOB1.webp") center/cover no-repeat;
+  background: url("../image/BannerMOB1.webp") center/cover no-repeat;
 }
 
 #ca1.owl-carousel .owl-item .drImage1{
   display: none;
 }
 #ca1.owl-carousel .item2 {
-  background: linear-gradient(to right,#fddde9c4 10%, #00000000 64%) 0 0 / cover, url("../image/BannerMOB2.webp") center/cover no-repeat;
+  background: url("../image/BannerMOB2.webp") center/cover no-repeat;
 }
 #ca1.owl-carousel .item3 {
-  background: linear-gradient(to right,#fddde9c4 10%, #00000000 64%) 0 0 / cover, url("../image/BannerMOB3.webp") center/cover no-repeat;
+  background: url("../image/BannerMOB3.webp") center/cover no-repeat;
 }
 
 .bannerCard  {
   padding: 12px;
   border-radius: 12px;
+  background: linear-gradient(to right,#fddde9c4 50%, #fddde96b 74%) 0 0 / cover ;
 }
 
 }
@@ -78,7 +79,13 @@
 
 @media screen and (device-width: 1024px) and (device-height: 768px) and (orientation: landscape) {
 #ca1.owl-carousel .item1 {
-        background: linear-gradient(to right, #fddde9c4 10%, #00000000 64%) 0 0 / cover, url(../image/BannerMOB1.webp) 20% 16% / cover no-repeat;
+        background:url("../image/BannerMOB1.webp") 20% 16% / cover no-repeat;
+    }
+#ca1.owl-carousel .item2 {
+        background:url("../image/BannerMOB2.webp") center/ cover no-repeat;
+    }
+#ca1.owl-carousel .item3 {
+        background:url("../image/BannerMOB3.webp") center/ cover no-repeat;
     }
 }
 
