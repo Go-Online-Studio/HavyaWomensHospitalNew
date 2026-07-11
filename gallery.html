@@ -465,9 +465,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
     <script src="js/spotlight.bundle.js"></script>
 
      <script>
+      var myGallery = [];
       Spotlight.show(myGallery, {
         // "fade", "slide", "scale", and "rotate"
         animation: "slide",
@@ -518,14 +520,19 @@
     </script>
 
      <script>
-      $('.grid').masonry({
+      var $grid = $('.grid').masonry({
        // set itemSelector so .grid-sizer is not used in layout
        itemSelector: '.grid-item',
        // use element for option
        columnWidth: '.grid-sizer',
        gutter: '.gutter-sizer',
        percentPosition: true,
-      })    
+      });
+
+      // Layout Masonry after each image loads
+      $grid.imagesLoaded().progress(function() {
+        $grid.masonry('layout');
+      });
     </script>
 
     <script defer src="js/script.js"></script>
